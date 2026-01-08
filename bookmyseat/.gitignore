@@ -4,11 +4,10 @@ __pycache__/
 
 # Django
 db.sqlite3
-.env
 
-# Virtual Environment
+# Virtual environment
 venv/
 
-# OS files
-.DS_Store
+# OS
 Thumbs.db
+.DS_Store
