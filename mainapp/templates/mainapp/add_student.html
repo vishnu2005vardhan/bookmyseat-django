@@ -1,0 +1,12 @@
+{% extends 'mainapp/base.html' %}
+{% block content %}
+
+<h3>Add Student</h3>
+
+<form method="post" class="w-50">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success">Save</button>
+</form>
+
+{% endblock %}

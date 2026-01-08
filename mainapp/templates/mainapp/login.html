@@ -1,0 +1,52 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+
+            <h3 class="text-center mb-3">Login</h3>
+
+            {% if error %}
+                <div class="alert alert-danger">
+                    {{ error }}
+                </div>
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <input 
+                        type="text" 
+                        name="username" 
+                        class="form-control"
+                        placeholder="Username" 
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <input 
+                        type="password" 
+                        name="password" 
+                        class="form-control"
+                        placeholder="Password" 
+                        required
+                    >
+                </div>
+
+                <button class="btn btn-primary w-100">
+                    Login
+                </button>
+            </form>
+
+            <p class="text-center mt-3">
+                Don’t have an account?
+                <a href="/signup/">Signup</a>
+            </p>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
