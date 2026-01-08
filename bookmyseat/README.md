@@ -112,6 +112,29 @@ python manage.py createsuperuser
 python manage.py runserver
 
 
+---
+
+## 📸 Application Screenshots
+
+### 🔐 Login Page
+![Login Page](screenshots/login.png)
+
+### 📝 Signup Page
+![Signup Page](screenshots/signup.png)
+
+### 🏠 Student Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### ➕ Add Student Page
+![Add Student](screenshots/add_student.png)
+
+---
+
+
+
+
+
+
 
 👨‍💻### Author
 
